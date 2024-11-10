@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #87ceeb, #b0e0e6);
+            /* Sky blue gradient background */
+            color: #333;
+            /* Darker text for contrast */
+            line-height: 1.6;
+            overflow-x: hidden;
+            /* Prevent horizontal scrolling */
+            transition: background 0.5s ease-in-out;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(90deg, #4caf50, #1e90ff);
+            /* Green to blue gradient */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation: header-glow 5s infinite alternate;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #fff;
+            /* White for contrast */
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #f0f8ff;
+            /* Lighter text for the subtitle */
+        }
+
+        /* Animation: Header Glow */
+        @keyframes header-glow {
+            from {
+                background: linear-gradient(90deg, #4caf50, #00bfff);
+                /* Cyan highlights */
+            }
+
+            to {
+                background: linear-gradient(90deg, #00bfff, #4caf50);
+            }
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 10px 0;
+            background-color: #1e90ff;
+            /* Sky blue for navigation */
+            border-top: 2px solid #87ceeb;
+            border-bottom: 2px solid #87ceeb;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            /* White text for navigation links */
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #4caf50;
+            /* Green hover effect */
+            transform: scale(1.1);
+        }
+
+        /* Section Styling */
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            background: #f0f8ff;
+            /* Light blue for sections */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, background 0.5s ease-in-out;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            background: #e6f7ff;
+            /* Slightly lighter hover effect */
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #1e90ff;
+            /* Sky blue underline */
+            display: inline-block;
+            padding-bottom: 5px;
+            color: #1e90ff;
+            /* Sky blue heading */
+        }
+
+        /* Project Cards */
+        .project-card {
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #b0e0e6;
+            /* Powder blue for cards */
+            border-radius: 8px;
+            transition: transform 0.3s, background 0.5s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            background: linear-gradient(145deg, #1e90ff, #87ceeb);
+            /* Gradient on hover */
+            color: #fff;
+            /* Text turns white */
+        }
+
+        /* Skills */
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        ul li {
+            background: linear-gradient(145deg, #87ceeb, #00bfff);
+            /* Sky blue gradients */
+            color: #333;
+            /* Dark text for contrast */
+            padding: 10px 20px;
+            margin: 5px 0;
+            border-radius: 5px;
+            display: inline-block;
+            transition: transform 0.3s, background 0.5s ease-in-out;
+        }
+
+        ul li:hover {
+            transform: scale(1.1);
+            background: linear-gradient(145deg, #00bfff, #87ceeb);
+            /* Reverse gradient */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #1e90ff, #87ceeb);
+            color: white;
+        }
+
+        footer a {
+            color: #00bfff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #fff;
+            /* White on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Anushka Hegade</h1>
+        <p>Computer Science</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>A passionate Computer Science professional with a strong foundation in programming, machine learning, and
+                software development. Experienced in working on impactful projects and eager to explore new
+                technologies.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Amazon Alexa Sentimental Review</h3>
+                <p>Technologies: Python, ML | Nov 2021 - Dec 2021</p>
+                <p>A supervised ML-based system to analyze user sentiment using Bag of Words and Vectorization
+                    techniques.</p>
+            </div>
+            <div class="project-card">
+                <h3>Mobile Price Prediction</h3>
+                <p>Technologies: Python, ML | Jan 2023 - Feb 2023</p>
+                <p>Developed an application to predict mobile prices based on specifications using supervised ML
+                    algorithms.</p>
+            </div>
+            <div class="project-card">
+                <h3>AI-Based Career Guidance System</h3>
+                <p>Technologies: HTML, CSS, JS, Python | Nov 2022- May 2023</p>
+                <p>Created an AI-powered platform for personalized career recommendations.</p>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, C++, Java</li>
+                <li>Frameworks: Flutter</li>
+                <li>Database: MySQL</li>
+                <li>Tools: Git, Android Studio</li>
+            </ul>
+        </section>
+    </main>
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>Email: hegadeanushka05@gmail.com</p>
+        <p>Phone: +91 8149043682</p>
+        <a href="https://github.com/Anushkahegade17">GitHub</a>
+    </footer>
+</body>
+
+</html>
